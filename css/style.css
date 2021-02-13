@@ -1,0 +1,985 @@
+/* ============================================
+               COMMON CSS STARTS
+   ============================================= */
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+    font-family: "Roboto-Black";
+}
+
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-family: "Roboto-Bold";
+}
+
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+    font-family: "Roboto-Light";
+}
+
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+    font-family: "Roboto-Medium";
+}
+
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: "Roboto-Regular";
+}
+
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+    font-family: "Roboto-Thin";
+}
+
+
+
+@font-face {
+    src: url(../fonts/Phenomena/Phenomena-Bold.otf);
+    font-family: "Phenomena-Bold";
+}
+
+@font-face {
+    src: url(../fonts/pitch_display/Pitch-Regular.ttf);
+    font-family: "Pitch-Regular";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+p,
+span,
+a {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ============================================
+               COMMON CSS ENDS
+   ============================================= */
+
+/* ============================================
+               MENU PART STARTS
+   ============================================= */
+.main_menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    margin-left: 40px;
+    color: #fff;
+    font-size: 17px;
+    font-family: "Roboto-Medium";
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link:hover {
+    color: #57ecfa;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link.active {
+    color: #57ecfa;
+}
+
+/* MENU FIX STARTS */
+.menu_fix {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: #0a2230;
+}
+
+/* MENU FIX ENDS */
+
+/* ============================================
+               MENU PART ENDS
+   ============================================= */
+/* ============================================
+               BANNER PART STARTS
+   ============================================= */
+#banner_part {
+    padding: 200px 0 195px;
+    background: #0a2230;
+    position: relative;
+}
+
+.banner_text h1 {
+    color: #fff;
+    font-size: 120px;
+    font-family: "Pitch-Regular";
+    text-shadow: 0px 0px 80px rgba(87, 236, 250, 0.6);
+}
+
+.banner_text h6 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto-Regular";
+    position: relative;
+    padding-left: 20px;
+}
+
+.banner_text h6::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 5px;
+    width: 2px;
+    height: 70px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 50%, #57ecfa 50%);
+    background: -webkit-linear-gradient(top, #ffffff 50%, #57ecfa 50%);
+    background: linear-gradient(to bottom, #ffffff 50%, #57ecfa 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#57ecfa', GradientType=0);
+}
+
+.banner_btn a {
+    color: #222;
+    font-size: 18px;
+    font-family: "Roboto-Regular";
+    margin-top: 40px;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 100px;
+    filter: drop-shadow(0 0mm 4mm rgba(127, 207, 215, 0.4));
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+
+}
+
+.banner_btn a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.banner_img {
+    position: absolute;
+    left: 0;
+    top: -95px;
+}
+
+.inset_glow {
+    position: relative;
+}
+
+.inset_glow:after {
+    position: absolute;
+    content: "";
+    left: 77px;
+    top: 56px;
+    width: 78%;
+    height: 81%;
+    background: transparent;
+    border: 1px solid #24616f;
+    border-radius: 30px;
+    animation: one 20s alternate infinite;
+    -webkit-box-shadow: inset -4px -5px 20px 1px rgba(86, 232, 245, 0.3);
+    -moz-box-shadow: inset -4px -5px 20px 1px rgba(86, 232, 245, 0.3);
+    box-shadow: inset -4px -5px 20px 1px rgba(86, 232, 245, 0.3);
+}
+
+.inset_glow:before {
+    position: absolute;
+    content: "";
+    left: 77px;
+    top: 56px;
+    width: 78%;
+    height: 81%;
+    background: transparent;
+    border: 1px solid #24616f;
+    border-radius: 30px;
+    animation: two 20s alternate infinite;
+    -webkit-box-shadow: inset -4px -5px 20px 1px rgba(86, 232, 245, 0.3);
+    -moz-box-shadow: inset -4px -5px 20px 1px rgba(86, 232, 245, 0.3);
+    box-shadow: inset -4px -5px 20px 1px rgba(86, 232, 245, 0.3);
+}
+
+
+@keyframes one {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+@keyframes two {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================
+               BANNER PART ENDS
+   ============================================= */
+
+/* ============================================
+               ABOUT PART STARTS
+   ============================================= */
+#about_part {
+    padding: 58px 0 65px;
+    border-bottom: 1px solid#eee;
+    position: relative;
+}
+
+.about_text h3 {
+    color: #222;
+    font-size: 30px;
+    font-family: "Phenomena-Bold";
+    margin-bottom: 15px;
+}
+
+.about_text img {
+    margin-bottom: 45px;
+}
+
+.about_text p {
+    color: #444;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto-Regular";
+}
+
+.about_text p span {
+    display: block;
+    padding-top: 30px;
+}
+
+.about_img {
+    position: absolute;
+    left: 0;
+    top: -120px;
+}
+
+.about_btn a {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto-Regular";
+    padding: 15px 20px;
+    background: #222;
+    border-radius: 32px;
+    margin-top: 50px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.about_btn a:hover {
+    background: transparent;
+    color: #0a2230;
+    border: 1px solid #0a2230;
+}
+
+/* ============================================
+               ABOUT PART ENDS
+   ============================================= */
+/* ============================================
+               REASEARCH PART STARTS
+   ============================================= */
+#reasearch_part {
+    padding: 50px 0 80px;
+    position: relative;
+}
+
+.reasearch_text h3 {
+    color: #222;
+    font-size: 30px;
+    font-family: "Phenomena-Bold";
+    margin-bottom: 15px;
+}
+
+.reasearch_text p {
+    color: #444;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto-Regular";
+}
+
+.reasearch_text p span {
+    display: block;
+    padding-top: 30px;
+}
+
+.outside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.outside:after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 50px;
+    width: 100%;
+    height: 47%;
+    background: #0a202e;
+    border-radius: 10px;
+    z-index: -1;
+
+}
+
+.img_text h3 {
+    color: #222;
+    font-size: 25px;
+    font-family: "Phenomena-Bold";
+    background: #fff;
+    padding: 24px 0;
+    text-align: center;
+    position: relative;
+}
+
+.img_text h3::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+}
+
+.img_text h3::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #eee;
+}
+
+.img_text {
+    position: relative;
+}
+
+.img_text::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #eee;
+}
+
+.slick_img img {
+    padding-top: 40px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.outside .slick-initialized .slick-slide {
+    margin-right: 30px;
+}
+
+.slick_class .slick-dots li button {
+    font-size: 0;
+    border: none;
+    height: 3px;
+    width: 20px;
+    background: #d3d3d3;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.slick_class .slick-dots {
+    display: flex;
+    margin-top: 20px;
+}
+
+.slick_class .slick-dots li.slick-active button {
+    width: 30px;
+    background: #222;
+}
+
+.draggable {
+    padding-bottom: 10px;
+}
+
+/* ============================================
+               REASEARCH PART ENDS
+   ============================================= */
+/* ============================================
+               TRAINING PART STARTS
+   ============================================= */
+#training_part {
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.training {
+    left: 0;
+    top: -35px;
+}
+
+/* ============================================
+               TRAINING PART ENDS
+   ============================================= */
+/* ============================================
+               OUR EVENT PART STARTS
+   ============================================= */
+#event_part {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    padding: 50px 0 60px;
+}
+
+.event_head h2 {
+    color: #fff;
+    font-size: 40px;
+    font-family: "Phenomena-Bold";
+}
+
+.event_head p {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.event_btn a {
+    padding: 15px 20px;
+    color: #0a2230;
+    font-size: 17px;
+    font-family: "Phenomena-Bold";
+    background: #57ecfa;
+    border-radius: 32px;
+    margin: 0 10px;
+    filter: drop-shadow(0 0mm 4mm rgba(127, 207, 215, 0.4));
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.event_btn a:hover {
+    background: #fff;
+}
+
+.event_btn {
+    margin-bottom: 60px;
+}
+
+.event_pic h3 {
+    color: #222;
+    font-size: 28px;
+    font-family: "Phenomena-Bold";
+    padding: 24px 0;
+    background: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+/* ============================================
+               OUR EVENT PART ENDS
+   ============================================= */
+/* ============================================
+               OUR TEAM PART STARTS
+   ============================================= */
+#team_part {
+    background: #0a2230;
+    padding: 50px 0 60px;
+}
+
+.team_img {
+    position: relative;
+}
+
+.team_img .overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: rgb(10, 34, 48);
+    background: linear-gradient(0deg, rgba(10, 34, 48, .95) 0%, rgba(10, 34, 48, .8) 85%, rgba(48, 105, 139, .01) 100%);
+}
+
+.team_img .overlay h3 {
+    color: #fff;
+    font-size: 32px;
+    font-family: "Phenomena-Bold";
+}
+
+.team_img .overlay p {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Roboto-Regular";
+    line-height: 26px;
+}
+
+/* ============================================
+               OUR TEAM PART ENDS
+   ============================================= */
+/* ============================================
+               GALLERY PART STARTS
+   ============================================= */
+#gall_part {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    padding: 90px 0 100px;
+    border-bottom: 1px solid #162d3b;
+}
+
+.gall_head h2,
+.gall_head p {
+    color: #222;
+}
+
+.gall_mar {
+    margin-top: 30px;
+    margin-left: 45px;
+}
+
+
+/* ============================================
+               GALLERY PART ENDS
+   ============================================= */
+/* ============================================
+               CONTACT PART STARTS
+   ============================================= */
+#contact_part {
+    padding: 60px 0 60px;
+}
+
+.google_map iframe {
+    width: 100%;
+    height: 521px;
+    border: 5px solid #ddd !important;
+    border-radius: 5px;
+}
+
+.contact_add h3 {
+    color: #0a2230;
+    font-size: 32px;
+    font-family: "Phenomena-Bold";
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+
+.contact_add ul li a {
+    width: 120px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    left: -70px;
+    top: 60px;
+    border-radius: 10px;
+    text-align: right;
+    line-height: 50px;
+    -webkit-box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.05);
+    color: #0a2230;
+    font-size: 20px;
+    padding-right: 38px;
+}
+
+
+.contact_add ul li p {
+    color: #222;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    line-height: 26px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+
+/* ============================================
+               CONTACT PART ENDS
+   ============================================= */
+/* ============================================
+               FOOTER MENU PART STARTS
+   ============================================= */
+#footer_menu {
+    padding: 50px 0 30px;
+    background: #0a2230;
+    position: relative;
+}
+
+
+#footer_menu:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 112px;
+    width: 100%;
+    height: 2px;
+    background: #162d3b;
+}
+
+.footer_part_menu ul li a {
+    padding: 0px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Roboto-Regular";
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.footer_part_menu ul li a:hover {
+    color: #57ecfa;
+}
+
+.footer_copy p {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    margin-top: 40px;
+}
+
+
+
+
+/* ============================================
+               FOOTER MENU PART ENDS
+   ============================================= */
+/* ============================================
+               HOME PAGE CSS ENDS
+   ============================================= */
+/* ============================================
+              ABOUT PAGE CSS STARTS
+   ============================================= */
+#about_page_banner {
+    background: #0a2230;
+    padding: 150px 0 100px;
+}
+
+.about_page_head .breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.about_page_head h2 {
+    color: #fff;
+    font-size: 40px;
+    font-family: "Pitch-Regular";
+    text-shadow: 0px 3px 90px rgba(255, 255, 255, .5);
+}
+
+.about_page_head nav {
+    display: inline-block;
+}
+
+.about_page_head nav ol li a {
+    color: #fff !important;
+    font-size: 18px !important;
+    font-family: "Roboto-Medium";
+}
+
+.about_page_head nav ol li {
+    color: #fff !important;
+    font-size: 18px !important;
+    font-family: "Roboto-Medium";
+}
+
+/* ============================================
+              ABOUT PAGE CSS ENDS
+   ============================================= */
+/* ============================================
+               TRAINING PAGE CSS STARTS
+   ============================================= */
+#training_page_part {
+    padding: 100px 0 50px;
+}
+
+.training_head h2 {
+    color: #0a2230;
+    font-size: 36px;
+    font-family: "Phenomena-Bold";
+    margin-bottom: 25px;
+}
+
+.training_head p {
+    color: #444;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto-Regular";
+}
+
+.training_head p span {
+    display: block;
+    padding-top: 26px;
+}
+
+.training_btn a {
+    padding: 20px 30px;
+    background: #0a2230;
+    border-radius: 35px;
+    margin-top: 34px;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    border: 1px solid #000;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.training_btn a:hover {
+    background: transparent;
+    color: #222;
+}
+
+.tran_page_cont {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+#training_tab {
+    padding-bottom: 100px;
+}
+
+.train_tab_menu {
+    -webkit-box-shadow: 0px 3px 90px 10px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 3px 90px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 3px 90px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.tab_cont_main {
+    padding: 40px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 90px 10px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 3px 90px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 3px 90px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tab_cont_main p {
+    color: #444;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto-Regular";
+}
+
+.tab_cont_main p span {
+    display: block;
+    padding-top: 25px;
+}
+
+.train_list li {
+    list-style-type: disc;
+    color: #444;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto-Regular";
+}
+
+.train_tab_menu .nav-link {
+    display: block;
+    padding: 30px;
+    color: #222;
+    font-size: 18px;
+    font-family: "Roboto-Regular";
+    border-bottom: 1px solid #eee;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0a2230 !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+/* ============================================
+               TRAINING PAGE CSS ENDS
+   ============================================= */
+/* ============================================
+               ROBOT REASEARCH CSS STARTS
+   ============================================= */
+#robo_reasearch_page {
+    padding: 100px 0 50px;
+
+}
+
+.robo_reasearch_head h2 {
+    color: #222;
+    font-size: 36px;
+    font-family: "Phenomena-Bold";
+}
+
+.robo_reasearch_head p {
+    color: #444;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto-Regular";
+    padding-top: 24px;
+}
+
+.robo_reasearch_head p span {
+    display: block;
+    padding-top: 26px;
+}
+
+/* ============================================
+               ROBOT REASEARCH CSS ENDS
+   ============================================= */
+/* ============================================
+               EVENT PAGE CSS STARTS
+   ============================================= */
+.event_page_part {
+    padding-top: 100px;
+}
+
+/* ============================================
+               EVENT PAGE CSS ENDS
+   ============================================= */
+/* ============================================
+               JOIN US PAGE STARTS
+   ============================================= */
+#join_us_page {
+    padding: 100px 0;
+}
+
+.join_us_head h2 {
+    color: #222;
+    font-size: 33px;
+    font-family: "Phenomena-Bold";
+    padding-bottom: 10px;
+}
+
+.join_us_head p {
+    color: #222;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto-Regular";
+}
+
+
+.join_us_head h4 {
+    color: #222;
+    font-size: 20px;
+    font-family: "Phenomena-Bold";
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.join_us_list ul {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+
+.join_us_list ul li {
+    color: #222;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto-Regular";
+    margin-top: 5px;
+}
+
+.join_us_list ul li i {
+    margin-right: 15px;
+}
+
+.join_us_padding {
+    padding-top: 100px;
+}
+
+.pd_top_join {
+    padding-top: 20px;
+}
+
+.join_us_list ul {
+    list-style: decimal;
+}
+
+
+.join_us_pad {
+    margin-top: -10px;
+}
+
+/* ============================================
+               JOIN US PAGE ENDS
+   ============================================= */
